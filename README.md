@@ -24,4 +24,13 @@ It performs all inference **locally**, using explainable models and pre-scanned 
 
 ## Architecture
 CodeSuggester follows a modular hybrid-AI pipeline:
+User Input → Syntax & HMM Analysis → Vector Similarity Search → Ranked Suggestions → Pseudocode & Algorithm Insight
 
+| Module | Description |
+|--------|--------------|
+| **code_suggester.py** | Sublime Text plugin entry; connects frontend editor events to backend logic. |
+| **analyzer.py** | Detects coding “intent states” using a Hidden Markov Model and syntax parsing. |
+| **embedder.py** | Generates compact semantic embeddings for local library functions using `sentence-transformers`. |
+| **suggester.py** | Combines HMM state prediction with vector similarity ranking for final code suggestions. |
+| **explain.py** | Produces pseudocode and algorithmic insights based on code structure. |
+| **functions.json** | Local dataset of available functions and short descriptions, generated from library scanning. |
