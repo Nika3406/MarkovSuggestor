@@ -3,7 +3,7 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 **CodeSuggester** enhances Sublime Text with two core capabilities:
 
 1. **Smart Code Suggestions**  
@@ -22,6 +22,6 @@ It performs all inference **locally**, using explainable models and pre-scanned 
 
 ---
 
-## 🧩 Architecture
+## Architecture
 CodeSuggester follows a modular hybrid-AI pipeline:
 
