@@ -1,5 +1,5 @@
 # MarkovSuggestor
-**An intelligent, explainable code suggestion and analysis plugin powered by hybrid AI — combining Hidden Markov Models (HMM), local code scanning, and minimal NLP embeddings.**
+**An intelligent, explainable code suggestion and analysis plugin powered by hybrid — combining Hidden Markov Models (HMM), local code scanning, and minimal NLP embeddings.**
 
 ---
 
