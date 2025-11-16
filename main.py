@@ -1,7 +1,7 @@
 import os
 from file_manager import FileManager
 from markov import HiddenMarkovModel
-from observer import observe_lines
+from observer import observe_lines, emission_probabilities
 
 # Reading input Python file (obserable state)
 PATH = os.path.dirname(__file__)
@@ -16,7 +16,7 @@ observed_lines = observe_lines(observable_lines)
 print("Observed lines:", observed_lines)
 
 # Calculating hidden states
-hidden_states = HiddenMarkovModel.emit(observable_states)
+hidden_states = HiddenMarkovModel.emit(observed_lines, emission_probabilities)
 print("Hidden states:", hidden_states)
 
 # Calculating prediction
