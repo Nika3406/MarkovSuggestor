@@ -1,21 +1,24 @@
 import os
 from file_manager import FileManager
 from markov import HiddenMarkovModel
+from observer import observe_lines
 
 # Reading input Python file (obserable state)
 PATH = os.path.dirname(__file__)
-INPUT_FILE = PATH + '/sample_projects/project1/main.py'
+INPUT_FILE_PATH = PATH + '/sample_projects/project1/main.py'
 
-with open(INPUT_FILE, 'r') as file:
-    python_file = file.read()
+observable_states = FileManager(INPUT_FILE_PATH)
 
-observable_states = FileManager(python_file)
+observable_lines = observable_states.get_lines()
+
+observed_lines = observe_lines(observable_lines)
+
+print("Observed lines:", observed_lines)
 
 # Calculating hidden states
 hidden_states = HiddenMarkovModel.emit(observable_states)
+print("Hidden states:", hidden_states)
 
 # Calculating prediction
 prediction = HiddenMarkovModel.transform(hidden_states)
-
-# TODO: Replace with code suggestion GUI
-print(prediction)
+print("Next hidden state:", prediction)

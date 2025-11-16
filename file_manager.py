@@ -1,6 +1,7 @@
 class FileManager:
-    def __init__(self, file: str):
-        self.file = file
+    def __init__(self, file_path: str):
+        with open(file_path, 'r') as file_data:
+            self.file = file_data.read()
     
     def get_imports(self):
         imports = []
@@ -49,4 +50,3 @@ class FileManager:
 
     def num_of_lines(self):
         return len(self.file.split('\n'))
-        
