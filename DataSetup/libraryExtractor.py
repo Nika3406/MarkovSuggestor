@@ -119,13 +119,13 @@ def extract_library_info(library_name):
             f.write(f"Total Classes: {len(classes)}\n")
             f.write(f"Other Members: {len(other)}\n")
 
-        print(f"✓ Information saved to {output_file}")
+        print(f"  Information saved to {output_file}")
         print(f"  Functions: {len(functions)}")
         print(f"  Classes: {len(classes)}")
         print(f"  Other members: {len(other)}")
 
     except ImportError:
-        print(f"✗ Error: Cannot import library '{library_name}'")
+        print(f"  Error: Cannot import library '{library_name}'")
         print(f"  Make sure it's installed: pip install {library_name}")
     except Exception as e:
         print(f"✗ Error: {e}")
