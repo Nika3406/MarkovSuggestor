@@ -7,6 +7,8 @@ class HiddenMarkovModel:
         Args: 
             state (FileManager): The current file state in the Hidden Markov Model
         """
+
+        return None # FIXME: Finish 
         # Calculate initial hidden state
         hidden_states_probabilities = []
         for hidden_state in emissions[1:]:
