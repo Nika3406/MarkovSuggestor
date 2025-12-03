@@ -21,5 +21,11 @@
         "context": [
             { "key": "selector", "operator": "equal", "operand": "source.python" }
         ]
+    },
+
+    // Open suggestions window (Ctrl+Alt+S)
+    {
+        "keys": ["ctrl+alt+s"],
+        "command": "open_suggestions_window"
     }
 ]
