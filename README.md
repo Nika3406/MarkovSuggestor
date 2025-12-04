@@ -29,7 +29,7 @@ User Input → Syntax & HMM Analysis → Vector Similarity Search → Ranked Sug
 | Module | Description |
 |--------|--------------|
 | **code_suggester.py** | Sublime Text plugin entry; connects frontend editor events to backend logic. |
-| **analyzer.py** | Detects coding “intent states” using a Hidden Markov Model and syntax parsing. |
+| **code_explainer.py** | Uses the library info from the function database to create pseudocode to explain your code. |
 | **embedder.py** | Generates compact semantic embeddings for local library functions using `sentence-transformers`. |
 | **suggester.py** | Combines HMM state prediction with vector similarity ranking for final code suggestions. |
 | **explain.py** | Produces pseudocode and algorithmic insights based on code structure. |
