@@ -1,0 +1,6 @@
+{
+    "enable_suggestions": true,
+    "enable_explanations": true,
+    "model_path": "os_function_database.json",
+    "max_suggestions": 5
+}

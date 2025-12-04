@@ -23,7 +23,7 @@ RE_CLASS = re.compile(r'^Class:\s*(.+)$')
 RE_SIGNATURE = re.compile(r'^Signature:\s*(.+)$')
 RE_DESCRIPTION = re.compile(r'^Description:\s*(.*)$')
 
-DEFAULT_MODEL = "all-MiniLM-L6-v2"
+DEFAULT_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 
 def parse_os_info_file(path):
     entries = []
@@ -165,7 +165,9 @@ def build_database(input_path, output_path, model_name=DEFAULT_MODEL, max_length
         })
 
     # write json
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    output_dir = os.path.dirname(output_path)
+    if output_dir:  # Only create directories if path contains a directory
+        os.makedirs(output_dir, exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(db, f, indent=2, ensure_ascii=False)
 

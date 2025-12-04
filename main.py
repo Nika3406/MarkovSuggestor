@@ -5,7 +5,7 @@ from observer import observe_lines, emission_probabilities, transition_probabili
 
 # Reading input Python file (obserable state)
 PATH = os.path.dirname(__file__)
-INPUT_FILE_PATH = PATH + '/sample_projects/project2/main.py'
+INPUT_FILE_PATH = PATH + '/sample_projects/project1/main.py'
 
 observable_states = FileManager(INPUT_FILE_PATH)
 

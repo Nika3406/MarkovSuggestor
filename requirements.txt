@@ -1,4 +1,0 @@
-sublime
-torch
-sentence-transformers
-numpy
