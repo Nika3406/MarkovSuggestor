@@ -32,5 +32,4 @@ User Input → Syntax & HMM Analysis → Vector Similarity Search → Ranked Sug
 | **code_explainer.py** | Uses the library info from the function database to create pseudocode to explain your code. |
 | **embedder.py** | Generates compact semantic embeddings for local library functions using `sentence-transformers`. |
 | **suggester.py** | Combines HMM state prediction with vector similarity ranking for final code suggestions. |
-| **explain.py** | Produces pseudocode and algorithmic insights based on code structure. |
 | **functions.json** | Local dataset of available functions and short descriptions, generated from library scanning. |
