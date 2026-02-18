@@ -24,7 +24,7 @@ It performs all inference **locally**, using explainable models and pre-scanned 
 
 ## Architecture
 CodeSuggester follows a modular hybrid-AI pipeline:
-User Input → Syntax & HMM Analysis → Vector Similarity Search → Ranked Suggestions → Pseudocode & Algorithm Insight
+User Input --> Syntax & HMM Analysis --> Vector Similarity Search --> Ranked Suggestions --> Pseudocode & Algorithm Insight
 
 | Module | Description |
 |--------|--------------|
